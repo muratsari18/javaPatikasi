@@ -1,0 +1,17 @@
+package giris;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+       int km,acilisUcret=10;
+       double ucret,perKm=2.20;
+       Scanner inp = new Scanner(System.in);
+       System.out.print("Lütfen KM bilgisini giriniz:");
+       km=inp.nextInt();
+
+       ucret = (km * perKm)+acilisUcret;
+       //ucret=(ucret<20) ? 20 : ucret;
+       double totalUcret = (ucret<20) ? 20 : ucret;
+       System.out.println("Ödemeniz Gereken Ücret:"+totalUcret);
+
+    }
+}
